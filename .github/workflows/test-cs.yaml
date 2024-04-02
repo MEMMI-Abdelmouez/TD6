@@ -14,8 +14,8 @@ jobs:
         with:
           php-version: "7.4"
 
-      - name: Composer
-        run: composer install
+      - name: Installer PHPCS
+        run: composer global require "squizlabs/php_codesniffer=*"
 
       - name: Exécuter PHPCS
-        run: vendor/bin/phpcs ./src
+        run: ~/.composer/vendor/bin/phpcs ./src
