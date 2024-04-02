@@ -14,13 +14,13 @@ jobs:
       - name: Checkout du code
         uses: actions/checkout@v2
 
-      - name: Installer PHP et Composer
+      - name: PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: "7.4"
 
-      - name: Installer les dépendances
+      - name: Composer
         run: composer install
 
       - name: Exécuter PHPCS
-        run: vendor/bin/phpcs --standard=PSR12 chemin_vers_vos_fichiers_php
+        run: vendor/bin/phpcs ./src
