@@ -1,4 +1,5 @@
 name: PHPCS td6
+on: [push]
 jobs:
   phpcs:
     name: PHPCS
