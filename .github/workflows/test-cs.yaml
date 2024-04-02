@@ -1,0 +1,21 @@
+name: PHPCS td6
+on: [push]
+jobs:
+  phpcs:
+    name: PHPCS
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v2
+
+      - name: PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "7.4"
+
+      - name: Installer PHPCS
+        run: composer global require "squizlabs/php_codesniffer=*"
+
+      - name: Exécuter PHPCS
+        run: ~/.composer/vendor/bin/phpcs ./src
