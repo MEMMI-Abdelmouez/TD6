@@ -1,10 +1,4 @@
-name: PHP CodeSniffer
-
-on:
-  push:
-    branches:
-      - mes-dates
-
+name: PHPCS td6
 jobs:
   phpcs:
     name: PHPCS
