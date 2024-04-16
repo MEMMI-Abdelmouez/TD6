@@ -12,7 +12,7 @@ jobs:
       - name: PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: "7.4"
+          php-version: "8.2"
 
       - name: Installer PHPCS
         run: composer global require "squizlabs/php_codesniffer=*"
@@ -30,7 +30,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: "7.4"
+          php-version: "8.2"
 
       - name: Install Composer Dependencies
         run: composer install
