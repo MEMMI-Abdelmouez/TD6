@@ -1,1 +1,1 @@
-{"version":1,"defects":{"ValidatorTest::test_Nbr_char":7,"MesDatesTest::testdemain":8},"times":{"ValidatorTest::test_Nbr_char":0.003,"MesDatesTest::testdemain":0.005}}
+{"version":1,"defects":{"ValidatorTest::test_Nbr_char":7,"MesDatesTest::testdemain":8},"times":{"ValidatorTest::test_Nbr_char":0.003,"MesDatesTest::testdemain":0.003}}
