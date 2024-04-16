@@ -1,5 +1,6 @@
 <?php
-class ValidatorTest extends PHPUnit\Framework\TestCase{
+use PHPUnit\Framework\TestCase;
+class ValidatorTest extends TestCase{
     public function test_Nbr_char(){
         $instance = new \TestUnitaire\Validator();
         $resultat = $instance->Nbr_char("a");
