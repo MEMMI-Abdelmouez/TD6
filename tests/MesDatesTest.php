@@ -1,13 +1,12 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Abdou\MesDates;
 
 class MesDatesTest extends TestCase
 {
     public function testdemain()
     {
-        $mesDates = new MesDates();
+        $mesDates = new \Abdou\MesDates();
         $demain = $mesDates->demain();
 
         $Date = date('d-m-Y', strtotime('+1 day'));
